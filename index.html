@@ -172,7 +172,7 @@
               <span class="menu-title">Dashboard</span>
             </a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item nav-item-dropdown">
             <a class="nav-link" href="index.html">
               <i class="ti-palette menu-icon"></i>
               <span class="menu-title"> Products</span>
@@ -255,7 +255,7 @@
 
         </ul>
 
-        <ul class="sidenav">
+        <ul class="sidenav d-none">
           <li class="sidenav-item"><a href="#">Sales </a></li>
           <li class="sidenav-item"><a href="#">Revenue </a></li>
           <li class="sidenav-item"><a href="#">Downloads </a></li>
@@ -630,6 +630,15 @@
   <!-- End custom js for this page-->
   <!-- font awesome  -->
   <script src="https://kit.fontawesome.com/b98d090fd4.js" crossorigin="anonymous"></script>
+
+  <script>
+    $(document).ready(function(){
+        $(".sidebar .nav .nav-item-dropdown").click(function(){
+          event.preventDefault();
+          $(".sidebar .sidenav").toggleClass("d-none");
+        });
+      });
+  </script>
 </body>
 
 </html>
