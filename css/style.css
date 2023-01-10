@@ -17111,7 +17111,7 @@ dl {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   padding: 0;
-  width: 237px;
+  width: 380px;
   z-index: 11;
   transition: width 0.25s ease, background 0.25s ease;
   -webkit-transition: width 0.25s ease, background 0.25s ease;
@@ -17121,7 +17121,22 @@ dl {
     overflow: hidden;
     flex-wrap: nowrap;
     flex-direction: column;
-    margin-bottom: 60px; }
+    margin-bottom: 60px; 
+    flex-basis: 50%;
+  }
+  .sidebar .sidenav {
+    flex-basis: 50%;
+    margin-bottom: 0px;
+    padding-top: 30px;
+    list-style-type: none;
+    background-color: #E8E7EC;
+  }
+  .sidenav .sidenav-item a{
+    font-size: 15px;
+    font-weight: 400;
+    color: #0050e3;
+    text-decoration: none;
+  }
     .sidebar .nav .nav-item {
       -webkit-transition-duration: 0.25s;
       -moz-transition-duration: 0.25s;
@@ -17185,7 +17200,9 @@ dl {
           font-size: 0.875rem;
           line-height: 1;
           vertical-align: middle;
-          margin-top: 2px; }
+          margin-top: 2px; 
+          margin-right: 10px;
+        }
         .sidebar .nav .nav-item .nav-link .badge {
           margin-left: auto; }
           .rtl .sidebar .nav .nav-item .nav-link .badge {

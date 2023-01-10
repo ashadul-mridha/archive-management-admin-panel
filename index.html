@@ -164,12 +164,19 @@
     <!-- partial -->
     <div class="container-fluid page-body-wrapper">
       <!-- partial:partials/_sidebar.html -->
-      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+      <nav class="sidebar sidebar-offcanvas d-flex" id="sidebar">
         <ul class="nav">
           <li class="nav-item">
             <a class="nav-link" href="index.html">
               <i class="ti-shield menu-icon"></i>
               <span class="menu-title">Dashboard</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              <i class="ti-palette menu-icon"></i>
+              <span class="menu-title"> Products</span>
+              <i class="fa-solid fa-chevron-right"></i>
             </a>
           </li>
 
@@ -247,6 +254,14 @@
           </li> -->
 
         </ul>
+
+        <ul class="sidenav">
+          <li class="sidenav-item"><a href="#">Sales </a></li>
+          <li class="sidenav-item"><a href="#">Revenue </a></li>
+          <li class="sidenav-item"><a href="#">Downloads </a></li>
+          <li class="sidenav-item"><a href="#">Returns </a></li>
+        </ul>
+
       </nav>
       <!-- partial -->
       <div class="main-panel">
@@ -613,6 +628,8 @@
   <!-- Custom js for this page-->
   <script src="js/dashboard.js"></script>
   <!-- End custom js for this page-->
+  <!-- font awesome  -->
+  <script src="https://kit.fontawesome.com/b98d090fd4.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
