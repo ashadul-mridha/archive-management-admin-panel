@@ -270,7 +270,7 @@
             <div class="col-md-12 grid-margin">
               <div class="d-flex justify-content-between align-items-center">
                 <div>
-                  <h4 class="font-weight-bold mb-0"> Dashboard</h4>
+                  <h4 class="font-weight-bold mb-0 text-white"> Dashboard</h4>
                 </div>
                 <div>
                     <!-- <button type="button" class="btn btn-primary btn-icon-text btn-rounded">
@@ -635,6 +635,7 @@
     $(document).ready(function(){
         $(".sidebar .nav .nav-item-dropdown").click(function(){
           event.preventDefault();
+          $(".sidebar").toggleClass("activedropdown");
           $(".sidebar .sidenav").toggleClass("d-none");
         });
       });

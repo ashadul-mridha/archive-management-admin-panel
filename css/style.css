@@ -15663,7 +15663,7 @@ code {
 
 /* Footer */
 .footer {
-  background: #dddce1;
+  /* background: #dddce1; */
   color: color(dark);
   padding: 30px 2.45rem;
   transition: all 0.25s ease;
@@ -17075,7 +17075,10 @@ dl {
   flex-direction: row;
   padding-left: 0;
   padding-right: 0;
-  padding-top: 70px; }
+  padding-top: 70px; 
+  /* background-image: url('../images/dashboard/bg.jpg'); */
+  background: linear-gradient(0deg, rgb(2 2 2 / 19%), rgb(0 0 0 / 38%)), url('../images/dashboard/bg_main.gif');
+}
   .page-body-wrapper.full-page-wrapper {
     width: 100%;
     min-height: 100vh;
@@ -17083,19 +17086,23 @@ dl {
 
 .main-panel {
   transition: width 0.25s ease, margin 0.25s ease;
-  width: calc(100% - 237px);
+  width: calc(100% - 170px);
   min-height: calc(100vh - 70px);
   display: -webkit-flex;
   display: flex;
   -webkit-flex-direction: column;
-  flex-direction: column; }
+  flex-direction: column; 
+}
+.main-panel.activedropdown {
+  width: calc(100% - 380px);
+}
   @media (max-width: 991px) {
     .main-panel {
       margin-left: 0;
       width: 100%; } }
 
 .content-wrapper {
-  background: #dddce1;
+  /* background: #dddce1; */
   padding: 1.5rem 2.5rem;
   width: 100%;
   -webkit-flex-grow: 1;
@@ -17107,17 +17114,28 @@ dl {
 /* Sidebar */
 .sidebar {
   min-height: calc(100vh - 70px);
-  background: #dddce1;
+  /* background: #dddce1; */
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   padding: 0;
-  width: 380px;
+  width: 170px;
   z-index: 11;
   transition: width 0.25s ease, background 0.25s ease;
   -webkit-transition: width 0.25s ease, background 0.25s ease;
   -moz-transition: width 0.25s ease, background 0.25s ease;
-  -ms-transition: width 0.25s ease, background 0.25s ease; }
+  -ms-transition: width 0.25s ease, background 0.25s ease; 
+}
+.sidebar.activedropdown {
+  width: 380px;
+}
   .sidebar .nav {
+    overflow: hidden;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    margin-bottom: 60px; 
+    flex-basis: 100%;
+  }
+  .sidebar.activedropdown .nav {
     overflow: hidden;
     flex-wrap: nowrap;
     flex-direction: column;
